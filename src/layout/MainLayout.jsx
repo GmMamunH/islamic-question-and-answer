@@ -7,7 +7,7 @@ export const MainLayout = () => {
     <>
       {" "}
       <Navbar />
-      <div>
+      <div className='py-20 '>
         <Outlet />
       </div>
     </>

@@ -157,8 +157,8 @@ export const Navbar = () => {
 
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static">
-        <Toolbar>
+      <AppBar position="fixed">
+        <Toolbar className="container mx-auto">
          
           <Link to="/">
             {" "}
