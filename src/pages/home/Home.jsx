@@ -2,6 +2,7 @@ import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
 import CardActionArea from "@mui/material/CardActionArea";
+import { Link } from "react-router-dom";
 
 export const Home = () => {
   const catName = [
@@ -9,19 +10,19 @@ export const Home = () => {
       name: "ঈমান ও আকায়েদ",
       des: " ঈমান ও আকায়েদ বিভাগের অধীনে থাকা প্রশ্নগুলো এখানে দেখতে পাবেন",
       img: "https://www.iqa.info/img/logo.png",
-      link: "/iman-akayed"
+      link: "/iman-akayed",
     },
     {
       name: "কুরআনুল কারীম",
       des: " কুরআনুল কারীম বিভাগের অধীনে থাকা প্রশ্নগুলো এখানে দেখতে পাবেন",
       img: "https://www.iqa.info/img/logo.png",
-      link: "quranul-karim"
+      link: "quranul-karim",
     },
     {
       name: "হাদীস ও সুন্নাহ",
       des: " হাদীস ও সুন্নাহ বিভাগের অধীনে থাকা প্রশ্নগুলো এখানে দেখতে পাবেন",
       img: "https://www.iqa.info/img/logo.png",
-      link: "haddij-sunnah"
+      link: "haddij-sunnah",
     },
     {
       name: "পবিত্রতা ও সালাত বিভাগ",
@@ -77,20 +78,21 @@ export const Home = () => {
   return (
     <>
       <div className=" container mx-auto grid grid-cols-2 md:grid-cols-3  lg:grid-cols-4 gap-3 py-2 px-2">
-        {catName.map(({ name, des, img }, index) => (
-        
+        {catName.map(({ name, des, img, link }, index) => (
           <Card key={index} sx={{ maxWidth: 345 }}>
-            <CardActionArea>
-              <img className="p-4" src={img} alt={name} />
-              <CardContent>
-                <Typography gutterBottom variant="h5" component="div">
-                  {name}
-                </Typography>
-                <Typography variant="body2" sx={{ color: "text.secondary" }}>
-                  {des}
-                </Typography>
-              </CardContent>
-            </CardActionArea>
+            <Link to={link}>
+              <CardActionArea>
+                <img className="p-4" src={img} alt={name} />
+                <CardContent>
+                  <Typography gutterBottom variant="h5" component="div">
+                    {name}
+                  </Typography>
+                  <Typography variant="body2" sx={{ color: "text.secondary" }}>
+                    {des}
+                  </Typography>
+                </CardContent>
+              </CardActionArea>
+            </Link>
           </Card>
         ))}
       </div>

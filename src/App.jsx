@@ -1,12 +1,8 @@
-import { Navbar } from "./components/shared/header/navbar/Navbar";
-import { Home } from "./pages/home/Home";
-
+import { MainLayout } from "./layout/MainLayout";
 function App() {
   return (
     <>
-     
-      <Navbar />
-      <Home/>
+      <MainLayout />
     </>
   );
 }
