@@ -24,7 +24,7 @@ export const ImanAkayed = () => {
       .finally(function () {
         // always executed
       });
-  })
+  }, [])
   // const videosList = [
   //   {
   //     link: "https://www.youtube.com/embed/_M3YcAFu9-M",
