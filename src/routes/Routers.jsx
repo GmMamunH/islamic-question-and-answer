@@ -14,6 +14,7 @@ export const router = createBrowserRouter([
         element: <Home />,
       },
       { path: "iman-akayed", element: <ImanAkayed /> },
+      
     ],
   },
   {

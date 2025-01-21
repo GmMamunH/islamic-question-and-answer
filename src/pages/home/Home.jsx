@@ -25,9 +25,10 @@ export const Home = () => {
       link: "haddij-sunnah",
     },
     {
-      name: "পবিত্রতা ও সালাত বিভাগ",
+      name: "পবিত্রতা ও সালাত",
       des: " পবিত্রতা ও সালাত বিভাগের অধীনে থাকা প্রশ্নগুলো এখানে দেখতে পাবেন",
       img: "https://www.iqa.info/img/logo.png",
+      link: "/namaj"
     },
     {
       name: "যাকাত ও সাদাকাহ",
